@@ -25,7 +25,7 @@ public class SpringFoxConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Test Backend Java AIA")
+                .title("Test Backend Java AIA Singapore")
                 .version("V1.0.0")
                 .build();
     }
