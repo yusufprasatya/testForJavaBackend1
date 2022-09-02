@@ -23,10 +23,10 @@ public class FlickrDatabaseController {
     private FlickrService flickrService;
 
     @PostMapping
-    public ResponseEntity<ResponseDto<Boolean>> createDataFromFlickr(Boolean status){
+    public ResponseEntity<ResponseDto<Boolean>> createDataFromFlickr(Boolean save){
         try {
             ResponseDto<Boolean> response =
-                    DtoUtil.responseDtoSuccess(flickrService.createDataFromFlickr(status));
+                    DtoUtil.responseDtoSuccess(flickrService.createDataFromFlickr(save));
             return new ResponseEntity<>(response, HttpStatus.OK);
         }catch (Exception e){
             ResponseDto<Boolean> response =
