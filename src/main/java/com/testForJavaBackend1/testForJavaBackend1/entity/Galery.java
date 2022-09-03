@@ -1,11 +1,15 @@
 package com.testForJavaBackend1.testForJavaBackend1.entity;
 
-import lombok.NonNull;
+import lombok.*;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.UUID;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 @Entity
 @Table(name = "galeries")
 public class Galery {
@@ -15,32 +19,15 @@ public class Galery {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", nullable = false)
     private UUID id;
+    private String title = "Default title";
+    private String link = "Default link";
+    private String[] media = {"media"};
+    private String date_taken = "Default date";
 
-    @NonNull
-    private String title;
-
-    @NonNull
-    private String link;
-
-    @NonNull
-    private String[] media;
-
-    @NonNull
-    private String date_taken;
-
-    @NonNull
     @Column(columnDefinition="TEXT")
-    private String description;
-
-    @NonNull
-    private String published;
-
-    @NonNull
-    private String author;
-
-    @NonNull
-    private String author_id;
-
-    @NonNull
-    private String[] tags;
+    private String description = "Default description";
+    private String published = "Default published";
+    private String author = "Default author";
+    private String author_id = "Default authorId";
+    private String[] tags = {"Default tags"};
 }
