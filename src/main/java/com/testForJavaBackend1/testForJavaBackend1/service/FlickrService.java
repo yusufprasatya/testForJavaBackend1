@@ -1,10 +1,8 @@
 package com.testForJavaBackend1.testForJavaBackend1.service;
 
 import com.testForJavaBackend1.testForJavaBackend1.dto.FlickrDto;
-import com.testForJavaBackend1.testForJavaBackend1.dto.FlickrItemsDto;
 import com.testForJavaBackend1.testForJavaBackend1.dto.PaginatedGaleriesResponse;
 import com.testForJavaBackend1.testForJavaBackend1.dto.TagsDto;
-import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
